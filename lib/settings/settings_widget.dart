@@ -188,7 +188,7 @@ class _SettingsWidgetState extends State<SettingsWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                         child: Text(
-                          'Edit Profile',
+                          'Profile',
                           style: FlutterFlowTheme.of(context).labelLarge,
                         ),
                       ),
@@ -231,7 +231,7 @@ class _SettingsWidgetState extends State<SettingsWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Icon(
-                        Icons.notifications_none,
+                        Icons.work_outline,
                         color: FlutterFlowTheme.of(context).secondaryText,
                         size: 24.0,
                       ),
@@ -239,7 +239,7 @@ class _SettingsWidgetState extends State<SettingsWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                         child: Text(
-                          'Notification Settings',
+                          'Employment Details',
                           style: FlutterFlowTheme.of(context).labelLarge,
                         ),
                       ),
@@ -282,7 +282,7 @@ class _SettingsWidgetState extends State<SettingsWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Icon(
-                        Icons.notifications_none,
+                        Icons.attach_money_outlined,
                         color: FlutterFlowTheme.of(context).secondaryText,
                         size: 24.0,
                       ),
@@ -290,7 +290,7 @@ class _SettingsWidgetState extends State<SettingsWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                         child: Text(
-                          'Notification Settings',
+                          'Bank Account',
                           style: FlutterFlowTheme.of(context).labelLarge,
                         ),
                       ),
@@ -426,18 +426,23 @@ class _SettingsWidgetState extends State<SettingsWidget>
                   onPressed: () {
                     print('Button pressed ...');
                   },
-                  text: 'Log Out',
+                  text: 'Delete my data',
                   options: FFButtonOptions(
-                    width: 150.0,
+                    width: 302.0,
                     height: 44.0,
                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primaryBackground,
-                    textStyle: FlutterFlowTheme.of(context).bodyMedium,
+                    color: Color(0x6AFFA7AC),
+                    textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Be Vietnam Pro',
+                          color: Color(0xFFF11522),
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w600,
+                        ),
                     elevation: 0.0,
                     borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).lineColor,
+                      color: Color(0x6AFFA7AC),
                       width: 2.0,
                     ),
                     borderRadius: BorderRadius.circular(38.0),
